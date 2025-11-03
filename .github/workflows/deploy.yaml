@@ -24,7 +24,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -U jupyter-book ghp-import
+        pip install -U jupyter-book==1.0.0 ghp-import
 
     - name: Build Jupyter Book
       run: |

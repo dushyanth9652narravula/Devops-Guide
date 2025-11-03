@@ -36,4 +36,6 @@
 
 - **Key-Pair** : Amazon Uses public key crypotography to encrypt and decrypt login information.
 
+## Creation of an EC2 instance
+
 

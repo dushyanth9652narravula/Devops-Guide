@@ -38,5 +38,20 @@
 
 ## Creation of an EC2 instance
 
-- Hii
+- In order to create an EC2 Instance first login to AWS Management Console and search for EC2 instance. Once you opened EC2 Service, there you can see many sections on left hand side. In there, click on EC2 Instance.
+
+- Once you opened instances tab, just click on launch instances then you can see the Instance creation page.
+
+- At first you have name the EC2 instance. After naming the EC2 instance, now select the AMI that you actually want to use in your application. There are so many AMIs available in AWS. In those some quick start AMIs are free tier eligible. There are AWS Marketplace AMIs which are included with softwares along with OS and those are costly. If you want to learn EC2 Service then select free tier AMI
+
+- Once you selected your AMI, now you have to select your instance type which determines hardware for you instance such as no of CPUs and RAM. As no of CPUs and RAM Size increases, the pricing of instance increases.
+
+- Once you selected your instance type, now you have to create your key-pair, which is used to login to ec2 instance via SSH. Once you clicked on create new key-pair, then name the key-pair and select `.pem` format, so that we can access the instance from git bash (as git bash has ssh service by default). Once you clicked on create button, then a private key gets downloaded to our system which is used to login to the Ec2 instance.
+
+- Once you have created a key-pair, now we have select the volume which is the disk storage for Ec2 instance (which is EBS by default).
+
+- After assigning the disk storage, now we have to assign a security group to the instance which controls the inbound and outbound traffic to the instance. In that security group, you can edit the inbound rules, such as allowing ssh login from your IP only, etc. Like that you edit as many rules as you want.
+
+- Once you assigned the security group to the instance, now click on advanced details and go down, there you can see a option called upload a file. This file is actually used to provision the VM while launching it. Here you can upload a bash script file (if it is linux AMI) or else you can write the scripts in the comment box which gets executed when you launch your instance.
+
 
